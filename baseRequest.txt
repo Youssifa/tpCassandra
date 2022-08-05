@@ -1,0 +1,17 @@
+create keyspace comptabilitegest with replication={'class':'SimpleStrategy', 'replication_factor':1};
+
+
+CREATE TABLE client(
+   id text PRIMARY KEY,
+   nom text,
+   prenom text
+);
+
+
+CREATE TABLE CompteBancaire(
+   numCompte text PRIMARY KEY,
+   numAgance text,
+   String text,
+   solde double  ,
+   isEpargne boolean
+);
